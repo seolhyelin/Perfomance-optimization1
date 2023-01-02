@@ -49,6 +49,7 @@ function removeSpecialCharacter(str) {
   // }
 
   let _str = str.substring(0, 300);
+  // eslint-disable-next-line no-useless-escape
   _str = _str.replace(/[\#\_\*\~\&\;\!\[\]\`\>\n\=\-]/g, "");
 
   return _str;
